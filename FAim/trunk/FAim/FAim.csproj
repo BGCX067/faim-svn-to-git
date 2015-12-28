@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB7F8A5E-D7AA-4C0A-802C-B774881B0CEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FAim</RootNamespace>
+    <AssemblyName>FAim</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuddyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuddyInfo.Designer.cs">
+      <DependentUpon>BuddyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuddyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuddyList.Designer.cs">
+      <DependentUpon>BuddyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CloseableTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CloseableTab.Designer.cs">
+      <DependentUpon>CloseableTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CloseableTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CloseableTabControl.Designer.cs">
+      <DependentUpon>CloseableTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CloseEventArgs.cs" />
+    <Compile Include="Controls\CommandButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CommandButton.Designer.cs">
+      <DependentUpon>CommandButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CueTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\InstantMessageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\InstantMessageControl.Designer.cs">
+      <DependentUpon>InstantMessageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VistaTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Win32Api.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstantMessageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstantMessageWindow.Designer.cs">
+      <DependentUpon>InstantMessageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BuddyInfo.resx">
+      <DependentUpon>BuddyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuddyList.resx">
+      <DependentUpon>BuddyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InstantMessageControl.resx">
+      <DependentUpon>InstantMessageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstantMessageWindow.resx">
+      <DependentUpon>InstantMessageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{1A64BE73-2F71-47F6-A874-CEF6C1109BE4}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-forward_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documents_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-open_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color_fontHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColorHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emoticon_smile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AccCoreLib">
+      <Guid>{7DE1F9E6-E8F0-4C60-935F-9FC30521505D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
